@@ -8,8 +8,9 @@
     <header>
         <h1>Student Profile</h1>
     </header>
+    <article>
     <section>
-        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <img src="Addedfiles/Profile_Picture.jpg" alt="Profile Picture"> <!--picture updated-->
         <table border="1">
             <tr>
                 <th>Name</th>
@@ -21,12 +22,39 @@
                 <td>21</td>
                 <td>Computer Science</td>
             </tr>
+            <!--Added new table rows-->>
+            <tr>
+                <td>Wisdom</td>
+                <td>22</td>
+                <td>Computer Engineering</td>
+            </tr>
+            <tr>
+                <td>Desire</td>
+                <td>20</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>Emediong</td>
+                <td>23</td>
+                <td>Fish Farming</td>
+            </tr>
         </table>
     </section>
+    </article>
     <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender">Male
+        <input type="radio" id="gender" name="gender">Female<br>
+        <label for="newslaterpref" >Subscribe To Newsletter</label>
+        <input type="checkbox" id="newslaterpref" name="newslaterpref"><br>
+        <label for="comments" >Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
         <input type="submit" value="Submit">
     </form>
+    <footer>
+        <p>&copy; 2026Student Profile. All rights reserved.</p>
+    </footer>
 </body>
 </html>
