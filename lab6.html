@@ -11,6 +11,46 @@
         function changeTitle() {
             document.getElementById("title").innerHTML = "New Title!";
         }
+        document.addEventListener("DOMContentLoaded", function() {
+    changetextcolour();
+});
+        function changetextcolour() {
+            document.getElementById("change").style.color = "red";
+        }
+        changetextcolour();
+        
     </script>
+    <p id="change">This paragraph is added using html but the colour addded to it is done using JavaScript.</p>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+
+    </ul>
+    <script>
+        let list = ["Item 4", "Item 5", "Item 6"];
+        let ul = document.getElementById("myList");
+        list.forEach(function(item) {
+    let li = document.createElement("li"); // create <li>
+    li.textContent = item;                 // set text
+    ul.appendChild(li);                    // add to <ul>
+});
+    </script>
+    <!--Creaing a toggle button to hide and alternative display elements-->
+    
+<p class="box">This is some text to be toggled.</p>
+<button onclick="toggle()">Toggle</button>
+<script>
+    function toggle() {
+        let box = document.querySelector(".box");
+        if (box.style.display === "none") {
+            box.style.display = "block";
+        } else {
+            box.style.display = "none";
+        }
+    }
+</script>
+
 </body>
 </html>
