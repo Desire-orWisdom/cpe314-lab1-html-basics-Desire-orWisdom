@@ -38,5 +38,27 @@ const display = document.getElementById("count");
 button.addEventListener("click", function increase() {counter++;
     document.getElementById("count").innerHTML = counter;})
 </script>
+<form id="form">
+    <label for="Email">Email:</label>
+    <input type="text" id="email">
+    <button type="submit">submit</button>
+</form>    
+<script>
+    let email = document.getElementById("email");
+    let form = document.getElementById("form");
+    form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (email.value.includes("@")) {
+        alert("Email is Valid!");
+    } else {
+        alert("Invalid Email! Please enter a valid Email");
+        email.value = "";
+        };
+        
+
+    })
+
+</script>
 </body>
 </html>
