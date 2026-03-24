@@ -52,5 +52,23 @@
     }
 </script>
 
+<!--Creating a form to extract its input using Js-->
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <button type="button" onclick="getInput()">Submit</button>
+</form>
+    <div id="output"></div >
+<script>
+    function getInput() {
+        let value = document.getElementById("name").value;
+    let output = document.getElementById("output");
+
+    // append text
+    output.innerHTML = value;
+    }
+    getInput()
+</script>
+
 </body>
 </html>

@@ -16,5 +16,27 @@
             console.log("Key pressed: " + event.key);
         });
     </script>
+    <div id="box">Hover over me</div>
+
+<script>
+const box = document.getElementById("box");
+
+box.addEventListener("mouseover", function () {
+    box.style.backgroundColor = "blue";
+});
+</script>
+
+<!--value to be incremented-->
+<p id="count">0</p>
+
+<script>
+let counter = 0;
+
+const button = document.getElementById("btn");
+const display = document.getElementById("count");
+
+button.addEventListener("click", function increase() {counter++;
+    document.getElementById("count").innerHTML = counter;})
+</script>
 </body>
 </html>
